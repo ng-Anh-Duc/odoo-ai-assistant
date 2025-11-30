@@ -1,5 +1,5 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-
+//code gemini chat for odoo
 const CORS_HEADERS = {
     "Access-Control-Allow-Origin": "*", // Cho phép Odoo gọi vào
     "Access-Control-Allow-Headers": "Content-Type",
