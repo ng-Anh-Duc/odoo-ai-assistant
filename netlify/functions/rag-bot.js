@@ -1,6 +1,6 @@
 // 1. IMPORT AND INITIALIZE
 const { GoogleGenAI } = require('@google/genai');
-// Code Knowledge Bot
+// Code Knowledge Bot 2
 // Initialize Google Generative AI SDK
 // The SDK automatically uses the GEMINI_API_KEY environment variable
 const ai = new GoogleGenAI({});
