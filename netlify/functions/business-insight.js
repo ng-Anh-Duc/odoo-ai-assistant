@@ -16,7 +16,7 @@ exports.handler = async (event) => {
     try {
         // 2. Đọc file CSV dữ liệu (Nằm ngay trong folder project)
         // Lưu ý: Trên Netlify, đường dẫn file cần xử lý khéo léo
-        const csvPath = path.resolve(__dirname, '../../sales_data.csv'); 
+        const csvPath = path.resolve(__dirname, '../../lead-analysis.csv'); 
         
         let csvData = "";
         try {
@@ -34,7 +34,7 @@ exports.handler = async (event) => {
 
         // 3. Kết nối Gemini
         const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+        const model = genAI.getGenerativeModel({ model: "models/gemini-flash-latest" });
 
         // 4. Prompt: Ra lệnh cho Gemini đóng vai CEO
         const prompt = `
